@@ -1,0 +1,233 @@
+body{
+
+	font-family: nunito, sans-serif;
+	color:#1c1c1c;
+}
+h1,h2,h3{
+
+
+	font-family: asap, sans-serif;
+	color:#000000;
+
+}
+
+.botao {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #191970;
+	font-size: .9em;
+	border-radius: 3px;
+}
+
+nav{
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #191970;
+
+}
+
+nav > a {
+
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 800;
+	font-size: 32px;
+	font-family: yellowtail, serif;
+
+}
+
+nav ul {
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+
+}
+nav ul li {
+
+	text-align: center;
+	width:100%;
+
+}
+
+nav ul li a {
+
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #ffffff
+}
+
+header {
+
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("../img/natureza.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color:#ffffff;
+	text-align: center;
+	padding: 20px;
+}
+
+header h1{
+	color: #ffffff;
+
+}
+
+header p{
+	margin-bottom: 2em;
+
+}
+
+#extinção {
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 10px 20px 20px;
+	background-color: #191970;
+	color: #ffffff;
+
+}
+
+#extinção h2 {
+
+	color: #ffffff;
+}
+
+#extinção p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+#habitat {
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	background-color: #191970
+	
+}
+
+#habitat div {
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+	background-color: #ffffff
+
+}
+#animais {
+
+	display: flex;
+	flex-direction: column;
+	align-items: all;
+	padding: 30px;
+	
+}
+
+#animais h2 {
+
+	padding: 30px;
+	background-color: #191970
+
+}
+
+#especies {
+	display: flex;
+	flex-direction: column;
+	align-items: all;
+	text-align: all;
+	padding: 10px 10px 20px 20px;
+	background-color: #191970;
+	color: #ffffff;
+}
+
+footer {
+
+	text-align: center;
+	padding: 10px;
+	background-color: ##00ffff;
+	color: #191970;
+}
+
+footer a {
+
+	text-decoration: none;
+	color: #191970
+
+}
+
+@media screen and (min-width: 768px){
+
+	nav {
+
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul {
+		flex-direction: row;
+		width:70%;
+	}
+
+	header {
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+	}
+
+	#extinção {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+
+	#habitat {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+
+
+	}
+
+	#habitat h2 {
+		text-align: center;
+		width: 100%;
+		
+
+	}
+
+	#habitat div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+
+		
+
+	}
+}
